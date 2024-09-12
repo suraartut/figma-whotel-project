@@ -1,0 +1,377 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap'); /* h1 */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap'); /* p */
+
+@import './_reboot.css';
+
+/* Rezervasyon Yap */
+.font-raleway {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+}
+
+/* Hamburger Menü ve Çarpı Animasyonları */
+#hamburger-menu {
+  display: none; /* Başlangıçta gizle */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #D11242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+}
+
+#hamburger-menu.open {
+  display: flex;
+  transform: translateX(0); /* Menü açıldığında görünür */
+}
+
+/* Hamburger ikonu animasyonları */
+#hamburger-btn.open .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#hamburger-btn.open .line2 {
+  opacity: 0;
+}
+
+#hamburger-btn.open .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#hamburger-menu ul li {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 48px;
+}
+
+@media (max-width: 640px) {
+  #hamburger-menu ul li {
+    font-size: 28px !important;
+    line-height: 28px !important;
+    }
+}
+
+/* Orta ekranlar için yazı boyutunu küçültme */
+@media (max-width: 768px) {
+  #hamburger-menu ul li {
+    font-size: 32px !important;
+    line-height: 32px !important;
+    }
+}
+
+/* Slider Starts */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-title {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .overlay-title {
+    font-size: 14px !important;
+    line-height: 16px !important;
+  }
+  .overlay-text {
+    font-size: 26px !important;
+    line-height: 28px !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .overlay-title {
+    font-size: 16px !important;
+    line-height: 18px !important;
+  }
+  .overlay-text {
+    font-size: 32px;
+    line-height: 35px;
+    }
+}
+
+.overlay-text {
+  font-family: 'Sentinel';
+  font-style: normal;
+  font-weight: 325;
+  font-size: 64px;
+  line-height: 77px;
+  }
+
+.swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resmin kaydırılmasını önler ve uygun şekilde ölçeklendirir */
+}
+/* Slider Ends */
+
+
+/* Page Content Starts */
+.about {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.font-gilda {
+    font-family: 'Gilda Display', sans-serif;
+    font-style: normal;
+}
+
+.paragraph {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.button-about-content {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #D11242;
+    display: inline-block; /* Çizgi ile hizalamak için */
+}
+
+/* Rectangle 6 */
+.rectangle{
+    height: 3px;
+    width: 86px;
+    background: #D11242;
+    bottom: -3px;
+    transition: width 0.5s ease; /* Control the speed of the animation */
+
+}
+
+.hover-container {
+  position: relative;
+}
+
+.hover-container:hover .rectangle {
+  width: 100%; /* Expands the width to 100% on hover */
+}
+
+/* hotelphotographer-Mustafa3bas_5M1A8949 1 */
+.about-photo-1 {
+width: auto;
+height: auto;
+z-index: 10;
+}
+
+/* hotelphotographer-Mustafa3bas_5M1A8747 2 */
+.about-photo-2 {
+width: auto;
+height: auto;
+}
+
+.icons-text{
+font-family: 'Josefin Sans', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+text-align: center;
+color: #D11242;
+margin: 20px 0 15px 0;
+}
+
+.icons-text-down{
+font-family: 'Josefin Sans', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+color: #000000;
+}
+
+/* Odalarımız, Ayrıcalıklarımız, Hizmetlerimiz */
+h3{
+font-family: 'Gilda Display', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 56px;
+color: #D11242;
+}
+
+/* Rooms photo hover starts*/
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Birincil resim */
+.primary-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+/* Hover resim */
+.hover-image {
+  width: 100%;
+  height: auto;
+  position: absolute; /* Üst üste bindirmek için */
+  top: 0;
+  left: 0;
+  opacity: 0; /* Başlangıçta gizli */
+  transition: opacity 0.5s ease;
+}
+
+/* Hover durumunda */
+.room:hover .primary-image {
+  opacity: 0; /* Birincil resmi gizle */
+}
+
+.room:hover .hover-image {
+  opacity: 1;
+}
+/* Rooms photo hover ends */
+
+/* Oda Adı*/
+.room-name{
+font-family: 'Gilda Display';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+color: #000000;
+}
+
+/* 2 kişi */
+.room span{
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 31px;
+color: #000000;
+}
+
+.room p {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 31px;
+color: #000000;
+}
+
+.copy{
+font-family: 'Raleway' !important;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+}
+
+footer h5{
+font-family: 'Gilda Display' !important;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+}
+
+footer{
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 16px;
+}
+
+footer .links a{
+  display: block;
+  margin-bottom: 7px;
+}
+
+footer .links a:hover{
+  color: #D11242;
+  transition: all 0.5s ease;
+}
+
+/* W Cafe */
+.hizmet .title{
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 16px;
+color: #D11242;
+}
+
+.hizmet .title-2{
+font-family: 'Sentinel';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 38px;
+color: #000000;
+}
+
+.hizmet .paragraph{
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 21px;
+line-height: 31px;
+color: #000000;
+}
+
+.ayricalik .baslik {
+font-family: 'Gilda Display';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+}
+
+.ayricalik .info {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 31px;
+}
+
+.ayricalik .detay {
+font-family: 'Raleway' !important;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 16px !important;
+line-height: 19px !important;
+}
+
+.phone {
+  width: 50px; /* Telefon ikonunun boyutu */
+}
+
+.phone-red {
+  display: none;
+}
+
